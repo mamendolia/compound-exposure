@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate a synthetic dataset for the two-vector advisory method.
+Generate a synthetic dataset for the compound-exposure method.
 
 Everything this script produces is invented. No client data is involved at any
 point. The seed is fixed, so anyone who clones the repository and runs the

@@ -14,6 +14,7 @@
       "asset_coverage": 0.548,
       "human": {
         "phish_prone_rate": 26.81,
+        "severity_weighted": false,
         "report_rate": 3.96,
         "training_gap_rate": 50.72,
         "credential_conversion_rate": 37.7,
@@ -43,6 +44,7 @@
       "asset_coverage": 0.807,
       "human": {
         "phish_prone_rate": 20.19,
+        "severity_weighted": false,
         "report_rate": 6.94,
         "training_gap_rate": 36.62,
         "credential_conversion_rate": 49.23,
@@ -72,6 +74,7 @@
       "asset_coverage": 0.774,
       "human": {
         "phish_prone_rate": 19.79,
+        "severity_weighted": false,
         "report_rate": 10.98,
         "training_gap_rate": 31.03,
         "credential_conversion_rate": 51.2,
@@ -101,6 +104,7 @@
       "asset_coverage": 0.902,
       "human": {
         "phish_prone_rate": 21.33,
+        "severity_weighted": false,
         "report_rate": 8.93,
         "training_gap_rate": 32.1,
         "credential_conversion_rate": 45.05,
@@ -130,6 +134,7 @@
       "asset_coverage": 0.84,
       "human": {
         "phish_prone_rate": 13.23,
+        "severity_weighted": false,
         "report_rate": 21.58,
         "training_gap_rate": 15.93,
         "credential_conversion_rate": 52.63,
@@ -159,6 +164,7 @@
       "asset_coverage": 0.821,
       "human": {
         "phish_prone_rate": 11.1,
+        "severity_weighted": false,
         "report_rate": 17.02,
         "training_gap_rate": 17.42,
         "credential_conversion_rate": 40.0,
@@ -188,6 +194,7 @@
       "asset_coverage": 0.955,
       "human": {
         "phish_prone_rate": 13.25,
+        "severity_weighted": false,
         "report_rate": 21.6,
         "training_gap_rate": 14.11,
         "credential_conversion_rate": 38.36,
@@ -217,6 +224,7 @@
       "asset_coverage": 0.994,
       "human": {
         "phish_prone_rate": 6.05,
+        "severity_weighted": false,
         "report_rate": 47.7,
         "training_gap_rate": 4.5,
         "credential_conversion_rate": 48.0,

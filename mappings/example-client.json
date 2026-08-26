@@ -1,0 +1,34 @@
+{
+  "_comment": [
+    "Column mapping for one engagement. Copy this file per client, never commit",
+    "the copies: mappings/*.json is gitignored except this example.",
+    "Left side is the model's field, right side is the header in the export.",
+    "Set a value to \"\" to declare the column absent.",
+    "criticality: 1-5 per unit, unlisted defaults to 3. arms: treated|control for the longitudinal analysis."
+  ],
+  "phishing_columns": {
+    "identifier": "Email",
+    "unit": "Group",
+    "delivered_at": "Delivered At",
+    "bounced_at": "Bounced At",
+    "archived_at": "Archived At",
+    "clicked": "Clicked At",
+    "entered_data": "Data Entered At",
+    "opened_attachment": "Attachment Opened At",
+    "enabled_macro": "Macro Enabled At",
+    "scanned_qr": "QR Code Scanned At",
+    "reported": "Reported"
+  },
+  "roster_columns": {
+    "identifier": "email",
+    "unit": "department"
+  },
+  "unattributed_unit": "UNATTRIBUTED",
+  "criticality": {
+    "Finance": 5,
+    "IT": 5
+  },
+  "arms": {
+    "Finance": "control"
+  }
+}

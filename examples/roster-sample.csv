@@ -1,0 +1,201 @@
+email,department
+user00001@example.invalid,Sales & Marketing
+user00011@example.invalid,Sales & Marketing
+user00021@example.invalid,Sales & Marketing
+user00031@example.invalid,Sales & Marketing
+user00041@example.invalid,Sales & Marketing
+user00051@example.invalid,Sales & Marketing
+user00061@example.invalid,Sales & Marketing
+user00071@example.invalid,Sales & Marketing
+user00081@example.invalid,Sales & Marketing
+user00091@example.invalid,Sales & Marketing
+user00101@example.invalid,Sales & Marketing
+user00111@example.invalid,Sales & Marketing
+user00121@example.invalid,Sales & Marketing
+user00131@example.invalid,Sales & Marketing
+user00141@example.invalid,Sales & Marketing
+user00151@example.invalid,Sales & Marketing
+user00161@example.invalid,Sales & Marketing
+user00171@example.invalid,Sales & Marketing
+user00181@example.invalid,Sales & Marketing
+user00191@example.invalid,Sales & Marketing
+user00201@example.invalid,Sales & Marketing
+user00211@example.invalid,Sales & Marketing
+user00221@example.invalid,Sales & Marketing
+user00231@example.invalid,Sales & Marketing
+user00241@example.invalid,Sales & Marketing
+user00251@example.invalid,Sales & Marketing
+user00261@example.invalid,Sales & Marketing
+user00271@example.invalid,Sales & Marketing
+user00281@example.invalid,Finance
+user00291@example.invalid,Finance
+user00301@example.invalid,Finance
+user00311@example.invalid,Finance
+user00321@example.invalid,Finance
+user00331@example.invalid,Finance
+user00341@example.invalid,Finance
+user00351@example.invalid,Finance
+user00361@example.invalid,Finance
+user00371@example.invalid,Finance
+user00381@example.invalid,Finance
+user00391@example.invalid,Finance
+user00401@example.invalid,Finance
+user00411@example.invalid,Finance
+user00421@example.invalid,IT
+user00431@example.invalid,IT
+user00441@example.invalid,IT
+user00451@example.invalid,IT
+user00461@example.invalid,IT
+user00471@example.invalid,IT
+user00481@example.invalid,IT
+user00491@example.invalid,IT
+user00501@example.invalid,IT
+user00511@example.invalid,IT
+user00521@example.invalid,R&D
+user00531@example.invalid,R&D
+user00541@example.invalid,R&D
+user00551@example.invalid,R&D
+user00561@example.invalid,R&D
+user00571@example.invalid,R&D
+user00581@example.invalid,R&D
+user00591@example.invalid,R&D
+user00601@example.invalid,R&D
+user00611@example.invalid,R&D
+user00621@example.invalid,R&D
+user00631@example.invalid,R&D
+user00641@example.invalid,R&D
+user00651@example.invalid,R&D
+user00661@example.invalid,R&D
+user00671@example.invalid,R&D
+user00681@example.invalid,R&D
+user00691@example.invalid,R&D
+user00701@example.invalid,R&D
+user00711@example.invalid,R&D
+user00721@example.invalid,R&D
+user00731@example.invalid,R&D
+user00741@example.invalid,Operations Site A
+user00751@example.invalid,Operations Site A
+user00761@example.invalid,Operations Site A
+user00771@example.invalid,Operations Site A
+user00781@example.invalid,Operations Site A
+user00791@example.invalid,Operations Site A
+user00801@example.invalid,Operations Site A
+user00811@example.invalid,Operations Site A
+user00821@example.invalid,Operations Site A
+user00831@example.invalid,Operations Site A
+user00841@example.invalid,Operations Site A
+user00851@example.invalid,Operations Site A
+user00861@example.invalid,Operations Site A
+user00871@example.invalid,Operations Site A
+user00881@example.invalid,Operations Site A
+user00891@example.invalid,Operations Site A
+user00901@example.invalid,Operations Site A
+user00911@example.invalid,Operations Site A
+user00921@example.invalid,Operations Site A
+user00931@example.invalid,Operations Site A
+user00941@example.invalid,Operations Site A
+user00951@example.invalid,Operations Site A
+user00961@example.invalid,Operations Site A
+user00971@example.invalid,Operations Site A
+user00981@example.invalid,Operations Site A
+user00991@example.invalid,Operations Site A
+user01001@example.invalid,Operations Site A
+user01011@example.invalid,Operations Site A
+user01021@example.invalid,Operations Site A
+user01031@example.invalid,Operations Site A
+user01041@example.invalid,Operations Site A
+user01051@example.invalid,Operations Site A
+user01061@example.invalid,Operations Site A
+user01071@example.invalid,Operations Site A
+user01081@example.invalid,Operations Site A
+user01091@example.invalid,Operations Site A
+user01101@example.invalid,Operations Site A
+user01111@example.invalid,Operations Site A
+user01121@example.invalid,Operations Site A
+user01131@example.invalid,Operations Site A
+user01141@example.invalid,Operations Site A
+user01151@example.invalid,Operations Site A
+user01161@example.invalid,Operations Site A
+user01171@example.invalid,Operations Site A
+user01181@example.invalid,Operations Site B
+user01191@example.invalid,Operations Site B
+user01201@example.invalid,Operations Site B
+user01211@example.invalid,Operations Site B
+user01221@example.invalid,Operations Site B
+user01231@example.invalid,Operations Site B
+user01241@example.invalid,Operations Site B
+user01251@example.invalid,Operations Site B
+user01261@example.invalid,Operations Site B
+user01271@example.invalid,Operations Site B
+user01281@example.invalid,Operations Site B
+user01291@example.invalid,Operations Site B
+user01301@example.invalid,Operations Site B
+user01311@example.invalid,Operations Site B
+user01321@example.invalid,Operations Site B
+user01331@example.invalid,Operations Site B
+user01341@example.invalid,Operations Site B
+user01351@example.invalid,Operations Site B
+user01361@example.invalid,Operations Site B
+user01371@example.invalid,Operations Site B
+user01381@example.invalid,Operations Site B
+user01391@example.invalid,Operations Site B
+user01401@example.invalid,Operations Site B
+user01411@example.invalid,Operations Site B
+user01421@example.invalid,Operations Site B
+user01431@example.invalid,Operations Site B
+user01441@example.invalid,Operations Site B
+user01451@example.invalid,Operations Site B
+user01461@example.invalid,Operations Site B
+user01471@example.invalid,Operations Site B
+user01481@example.invalid,Operations Site B
+user01491@example.invalid,Operations Site B
+user01501@example.invalid,Operations Site B
+user01511@example.invalid,Operations Site B
+user01521@example.invalid,Operations Site B
+user01531@example.invalid,Operations Site B
+user01541@example.invalid,Operations Poland
+user01551@example.invalid,Operations Poland
+user01561@example.invalid,Operations Poland
+user01571@example.invalid,Operations Poland
+user01581@example.invalid,Operations Poland
+user01591@example.invalid,Operations Poland
+user01601@example.invalid,Operations Poland
+user01611@example.invalid,Operations Poland
+user01621@example.invalid,Operations Poland
+user01631@example.invalid,Operations Poland
+user01641@example.invalid,Operations Poland
+user01651@example.invalid,Operations Poland
+user01661@example.invalid,Operations Poland
+user01671@example.invalid,Operations Poland
+user01681@example.invalid,Operations Poland
+user01691@example.invalid,Operations Poland
+user01701@example.invalid,Operations Poland
+user01711@example.invalid,Operations Poland
+user01721@example.invalid,Operations Poland
+user01731@example.invalid,Operations Poland
+user01741@example.invalid,Operations Poland
+user01751@example.invalid,Operations Poland
+user01761@example.invalid,Operations Poland
+user01771@example.invalid,Operations Poland
+user01781@example.invalid,Operations Poland
+user01791@example.invalid,Operations Poland
+user01801@example.invalid,Operations Poland
+user01811@example.invalid,Operations Poland
+user01821@example.invalid,Operations Poland
+user01831@example.invalid,Operations Poland
+user01841@example.invalid,Corporate UK
+user01851@example.invalid,Corporate UK
+user01861@example.invalid,Corporate UK
+user01871@example.invalid,Corporate UK
+user01881@example.invalid,Corporate UK
+user01891@example.invalid,Corporate UK
+user01901@example.invalid,Corporate UK
+user01911@example.invalid,Corporate UK
+user01921@example.invalid,Corporate UK
+user01931@example.invalid,Corporate UK
+user01941@example.invalid,Corporate UK
+user01951@example.invalid,Corporate UK
+user01961@example.invalid,Corporate UK
+user01971@example.invalid,Corporate UK
+user01981@example.invalid,Corporate UK
+user01991@example.invalid,Corporate UK

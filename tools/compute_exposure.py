@@ -69,13 +69,23 @@ def human_vector(people):
 
     sent = sum(int(p["phish_sent"]) for p in measured)
     clicked = sum(int(p["phish_clicked"]) for p in measured)
+    # Real ingested data carries a graded failure weight: a click and an
+    # enabled macro are both failures, and they are not the same failure. When
+    # the column is absent -- as in the synthetic dataset -- fall back to the
+    # plain count, so both sources run through the same engine.
+    graded = sum(float(p.get("failure_weight") or 0) for p in measured) \
+        if any("failure_weight" in p for p in measured) else None
     reported = sum(int(p["phish_reported"]) for p in measured)
     submitted = sum(int(p["credential_submitted"]) for p in measured)
     assigned = sum(int(p["training_assigned"]) for p in measured)
     completed = sum(int(p["training_completed"]) for p in measured)
 
-    # s: susceptibility. Phish-prone rate over delivered messages.
-    s = clicked / sent if sent else 0.0
+    # s: susceptibility. Severity-weighted failure rate over delivered
+    # messages where available, otherwise the plain phish-prone rate.
+    if sent:
+        s = (graded / sent) if graded is not None else (clicked / sent)
+    else:
+        s = 0.0
     # r: resilience. Report rate over delivered messages.
     r = reported / sent if sent else 0.0
     # k: knowledge gap. Share of assigned training still not completed.
@@ -88,6 +98,7 @@ def human_vector(people):
 
     components = {
         "phish_prone_rate": round(100 * s, 2),
+        "severity_weighted": graded is not None,
         "report_rate": round(100 * r, 2),
         "training_gap_rate": round(100 * k, 2),
         "credential_conversion_rate": round(100 * submitted / clicked, 2) if clicked else 0.0,

@@ -12,3 +12,9 @@ data/real/
 data/client/
 *.xlsx
 *.csv.gz
+
+# Per-client column mappings and raw exports never belong in the repository.
+mappings/*.json
+!mappings/example-client.json
+raw/
+*.salt

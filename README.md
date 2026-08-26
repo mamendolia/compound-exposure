@@ -1,8 +1,8 @@
-# advisory-method
+# compound-exposure
 
 A data-driven method for prioritising security awareness work by combining a
 **human risk vector** with a **technical risk vector** into a single ranking of
-business units — plus a working implementation that produces a directional
+business units — the Compound Exposure Score the repository is named after — plus a working implementation that produces a directional
 report from either synthetic or real data.
 
 The problem it addresses is narrow and common. Most awareness programmes are
@@ -94,6 +94,46 @@ is not a unit with a clean record. The correction is a deliberate bias — it is
 meant to make removing an awkward population from scope unattractive — and it
 is disclosed rather than buried. See [`docs/05`](docs/05-limits.md).
 
+## Running it on real data
+
+The synthetic dataset demonstrates the method; a real engagement needs an
+ingestion step, because the export never contains what the model assumes.
+
+```bash
+export EXPOSURE_SALT="a value you keep out of the repository"
+
+python3 tools/make_example_export.py          # builds a KnowBe4-shaped fixture
+python3 tools/ingest_knowbe4.py \
+    --phishing examples/knowbe4-export-sample.csv \
+    --roster examples/roster-sample.csv \
+    --mapping mappings/example-client.json \
+    --outdir data/ingested --period P1
+```
+
+Three things the ingestion enforces, each of which is a way real data lies:
+
+**A roster is required.** A phishing export contains only enrolled people —
+someone never enrolled is absent, not zero. Without an authoritative headcount
+there is no denominator, and coverage confidence cannot be computed at all.
+
+**Delivery, not scheduling, is the denominator.** Bounced messages are excluded.
+Counting them as unclicked sends deflates the failure rate, always in the
+flattering direction.
+
+**Failure is graded.** A click, an opened attachment, an enabled macro and a
+submitted credential are all failures and are not the same failure. Each
+delivered message is scored by the worst action recorded against it.
+
+The tool prints exclusion counts, per-unit coverage, and a warning when people
+appear under more than one unit value — which usually means the chosen column
+is a campaign targeting group rather than an org unit, and attribution is
+circular. Read that output before trusting any score. Details in
+[`docs/07`](docs/07-ingesting-real-data.md).
+
+Per-client mapping files and raw exports are gitignored. Email addresses are
+hashed with a salt supplied through the environment; the tool refuses to run
+without one.
+
 ## Repository layout
 
 ```
@@ -104,16 +144,23 @@ docs/
   04-nis2-article-20.md            What this evidences under NIS2, and what it does not
   05-limits.md                     Known failure modes, including the unsolved ones
   06-measuring-change.md           Longitudinal method: cohorts, control arms, what noise looks like
+  07-ingesting-real-data.md        Running it on an actual export: rosters, graded failure, attribution traps
 tools/
   generate_synthetic_data.py       Fixed-seed dataset with deliberately heterogeneous units
   compute_exposure.py              HRI, TRI, CES, coverage confidence
   build_report.py                  Scores to a directional report
   compare_periods.py               Period-over-period change with attribution testing
+  ingest_knowbe4.py                Raw phishing export to model format, with pseudonymisation
+  make_example_export.py           Builds an export-shaped fixture from the synthetic data
+mappings/
+  example-client.json              Column mapping template; per-client copies are gitignored
 templates/
   human-risk-reduction-report.md   The report structure, empty
 examples/
   sample-report.md                 Single-period output, regenerable from the commands above
   sample-change-analysis.md        Period-over-period output, with attribution
+  knowbe4-export-sample.csv        Fixture in the shape of a real export (invented)
+  roster-sample.csv                Fixture headcount list (invented)
 ```
 
 ## Scope and honesty notes

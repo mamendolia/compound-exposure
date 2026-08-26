@@ -1,4 +1,4 @@
-# advisory-method — sintesi in italiano
+# compound-exposure — sintesi in italiano
 
 *Il repository è in inglese. Questa pagina è un riassunto per chi arriva dal
 mercato italiano; per il metodo completo vedere [README.md](README.md).*
@@ -12,10 +12,11 @@ finisce distribuito equamente tra persone che non sono il problema.
 
 ## La proposta
 
-Un metodo a due vettori che combina il **rischio umano** (dati di simulazione
+Un metodo che combina il **rischio umano** (dati di simulazione
 phishing e formazione, famiglia KnowBe4) con il **rischio tecnico** (dati di
 vulnerability management, famiglia Qualys VMDR) in un'unica classifica di
-esposizione per unità organizzativa, con un'implementazione funzionante che
+**esposizione composta** (Compound Exposure Score, da cui il nome) per unità
+organizzativa, con un'implementazione funzionante che
 produce un report direzionale.
 
 Tre indici, tutti da 0 a 100, dove più alto significa peggio:
@@ -55,6 +56,21 @@ Nell'esempio incluso un'unità mostra un miglioramento statisticamente
 significativo che sparisce del tutto una volta considerato il braccio di
 controllo: il tasso era sceso perché la seconda campagna era più facile, non
 perché il programma avesse funzionato.
+
+## Esecuzione su dati reali
+
+Il documento [`docs/07-ingesting-real-data.md`](docs/07-ingesting-real-data.md)
+copre l'applicazione a un export vero. Tre punti che il tool impone, perché
+sono i modi in cui il dato reale inganna: serve un'anagrafica del personale
+(l'export contiene solo chi è stato arruolato in una campagna, quindi da solo
+non produce il denominatore della copertura); il denominatore è la consegna e
+non la programmazione, quindi i messaggi respinti si escludono; e il
+fallimento è graduato — click, allegato aperto, macro abilitata e credenziale
+inserita non sono la stessa cosa.
+
+L'indirizzo email viene sostituito da uno pseudonimo con un salt fornito
+dall'ambiente, tutte le altre colonne personali vengono scartate, e i file di
+mappatura per cliente sono esclusi dal versionamento.
 
 ## Rilevanza normativa
 
